@@ -9,7 +9,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^0.2.7",
     "core-js": "^3.6.5",
+    "element-plus": "^2.0.2",
     "vue": "3.2.8",
     "vue-router": "4.0.11",
     "vuex": "4.0.2"
@@ -34,8 +36,10 @@
     "eslint-plugin-vue": "^7.0.0",
     "husky": "^7.0.4",
     "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
-  }, 
+    "sass-loader": "^8.0.2",
+    "unplugin-auto-import": "^0.6.0",
+    "unplugin-vue-components": "^0.17.18"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
