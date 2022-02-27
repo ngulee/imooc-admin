@@ -5,9 +5,9 @@
         <span class="login-title-txt">用户登录</span>
       </div>
       <el-form-item class="login-item">
-        <el-icon class="login-item-icon">
-          <Avatar />
-        </el-icon>
+        <span class="login-item-icon">
+          <svg-icon icon="user" />
+        </span>
         <el-input
           placeholder="username"
           name="username"
@@ -15,24 +15,23 @@
         ></el-input>
       </el-form-item>
       <el-form-item class="login-item">
-        <el-icon class="login-item-icon">
-          <Lock />
-        </el-icon>
+        <span class="login-item-icon">
+          <svg-icon icon="password" />
+        </span>
         <el-input
           placeholder="password"
           name="password"
         ></el-input>
-        <el-icon class="login-item-icon-show-pwd">
-          <Open />
-        </el-icon>
+        <span class="login-item-icon">
+          <svg-icon icon="eye" />
+        </span>
       </el-form-item>
       <el-button type="primary" class="login-button">登录</el-button>
     </el-form>
   </div>
 </template>
 <script setup>
-import { } from 'vue'
-import { Avatar, Lock, Open } from '@element-plus/icons-vue'
+
 </script>
 <style lang='scss' scoped>
 .login {
@@ -49,6 +48,8 @@ import { Avatar, Lock, Open } from '@element-plus/icons-vue'
     justify-content: center;
     color: #fff;
     padding: 20px 0;
+    font-weight: 600;
+    font-size: 26px;
   }
   &-form {
     width: 520px;
@@ -57,7 +58,7 @@ import { Avatar, Lock, Open } from '@element-plus/icons-vue'
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    color: #454545;
+    color: #fff;
     ::v-deep .el-form-item__content {
       display: flex;
       align-items: center;
@@ -65,6 +66,9 @@ import { Avatar, Lock, Open } from '@element-plus/icons-vue'
       input {
         background-color: transparent;
         border: none;
+      }
+      .el-icon svg {
+        color: #fff;
       }
     }
     &-icon {
